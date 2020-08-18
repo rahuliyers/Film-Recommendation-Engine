@@ -1,0 +1,22 @@
+{
+  "name": "awesoma",
+  "version": "1.0.0",
+  "description": "A movie,book and music discovery engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://rahuliyer@bitbucket.org/rahuliyer/awesoma.git"
+  },
+  "keywords": [
+    "discover",
+    "movies",
+    "music",
+    "books"
+  ],
+  "author": "Rahul Iyer",
+  "license": "Proprietary. Content may no be used without explicit permission from Rahul Iyer"
+}

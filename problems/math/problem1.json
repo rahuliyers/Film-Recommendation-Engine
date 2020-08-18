@@ -1,0 +1,76 @@
+{
+	"name" : "arithmetic",
+	"subtopic" : "rational",
+	"difficulty" : "1",
+	"problem" : {
+		"variations" : [
+
+				"In a [p] factory, every day the first [p] costs ${z} to manufacture, but each subsequent [p] costs only ${x}. If {y} [p]s are manufactured daily, what is the daily total cost (in $) equal to ?",
+				"At the [p] club, a new member must pay ${z} to become a member, and receives a free [p]. If more [p]s are needed, they may be purchased for ${x} a piece. If [n] wishes to become a member and needs a total of {y} [p]s for a party, how much will the total cost (in $) be equivalent to?",
+				"I like to make and sell [p]s. I charge anyone who wants to buy just one [p] ${z}. But I offer a \"family plan\", where each additional purchase will cost only ${x} a piece. If a family of {y} wants my [p]s how much $ will they need to spend ?"
+		],
+		"variables" : [
+            {
+                "name": "x",
+                "maxRange": 5,
+                "type": "$",
+                "minRange": 1
+            },
+            {
+                "name": "y",
+                "maxRange": 30,
+                "type": "i",
+                "minRange": 2
+            },
+            {
+                "name": "z",
+                "maxRange": 20,
+                "type": "$",
+                "minRange": 6
+            },
+            {
+                "name": "d",
+                "maxRange": 0.99,
+                "type": "$",
+                "minRange": 0.01
+            },
+            {
+                "name": "s",
+                "type": "c"
+            },
+            {
+                "name": "p",
+                "type": "t"
+            },
+            {
+                "name": "n",
+                "type": "n"
+            },
+            {
+                "name": "f",
+                "type": "h"
+            }
+		],
+		"explanation" : [
+            "1 [p] costs ${z}.",
+            "{y} [p]s are required.",
+            "The first [p] will cost {z}.",
+            "The remaining {y-1} [p]s will cost ${x} each.",
+            "Adding them together we get:",
+            "total = ({y-1}){x} + {z}",
+            "By evaluating the answer choices, we can see that the equivalent answer is:"
+        ],
+        "correctAnswers": "{y-1}({x + d}) + {(z-(y-1)*d)}",
+        "answers": [
+            "{(y-1)}({x + d}) + {z}",
+            "{(y-1)}({x + d}) + {z+(y-1)*d}",
+            "{(y-1)}({(x + d)}) - {d}) + {z-(y-1)*d}",
+            "{(y-1)}({(x + d)}) - {(y-1)*d}) + {z}",
+            "{(y)}({(x)}) + {z}",
+            "{(y-1)}({(z)}) + {x}",
+            "{(y)}({(z)}) + {x}",
+            "{(y)}({(x + d)} - {d}) + {z-(y-1)*d}",
+            "{(y-1)}({(x + d)} - {d}) + {z-(y)*d}"
+        ]
+	}
+}

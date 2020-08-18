@@ -1,0 +1,42 @@
+{
+	"name" : "mechanics",
+	"subtopic" : "kinematics",
+	"difficulty" : "1",
+	"problem" : {
+		"variations" : [
+
+				"A runner begins to sprint at the rate of {x}m/s² for {y}s. What is the final velocity ?",
+				"A space shuttle takes off at the rate of {x}m/s². It travels for {y}s until it enters a black hole. What was the velocity of the ball before it entered the hole.",
+				"The accelerometer attached to Catman's utility belt indicates that he is accelerating at a rate of {x}m/s². Assuming he started from rest, after {y}s, what is his velocity ?"
+		],
+		"variables" : [
+            {
+                "name": "x",
+                "maxRange": 20,
+                "type": "i",
+                "minRange": 3
+            },
+            {
+                "name": "y",
+                "maxRange": 30,
+                "type": "i",
+                "minRange": 5
+            }
+		],
+		"explanation" : [
+            "The final velocity of an object can be calculated by the formula:",
+            "V<sub>final</sub> = V<sub>initial</sub> + acceleration * time",
+            "Substituting in the formula we get:",
+            "V<sub>final</sub> = 0 + {x}*{y} ",
+            "= "
+        ],
+        "correctAnswers": "{x*y}m/s",
+        "answers": [
+            "{x + y}m/s",
+            "{x/y}m/s",
+            "{x}m/s",
+            "{y}m/s",
+            "{x-y}m/s"
+        ]
+	}
+}

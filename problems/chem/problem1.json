@@ -1,0 +1,35 @@
+{
+	"name" : "Gas Laws",
+	"subtopic" : "Ideal gas law",
+	"difficulty" : "1",
+	"problem" : {
+		"variations" : [
+
+			"Determine the volume occupied by {x} grams of carbon dioxide gas at STP"
+		],
+		"variables" : [
+            {
+                "name": "x",
+                "maxRange": 5,
+                "type": "$",
+                "minRange": 1
+            }
+		],
+		"explanation" : [
+            "Ideal gas law is: PV = nRT",
+            "Rearranging into: V = nRT / P and substituting we get:",
+            "V = ({x}g / 44.0g/mol)(0.08206 L atm/(mol K))(273.0K)/1.00atm.",
+            "V = "
+        ],
+        "correctAnswers": "{(x/44)*0.08206*273} L",
+        "answers": [
+            "{(x/44)*273} L",
+            "{(x)*0.08206*273} L",
+            "{(x/44)*0.08206} L",
+            "{(x)*0.08206} L",
+            "{x} L",
+            "{(x/56)*0.08206*273} L",
+            "{(x/12)*0.08206*273} L"
+        ]
+	}
+}
